@@ -9,7 +9,7 @@ from datetime import datetime
 def leTab(dados):
     path = os.getcwd() + "/planilhas/" + dados
     data = pd.read_csv(path, sep=';', encoding='utf-8')
-    data = data.replace(',', '.')
+    data = data.replace(',', '.', regex=True)
     return data
 
 # Função que retorna intervalos do dataframe 
