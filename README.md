@@ -1,2 +1,2 @@
-# dataclima87-13
-Neste repositório estão presentes os Dados Meteorológicos referentes aos dados de 1987-2022. Também estão presente os arquivos para analise dos dados (main.ypnb e functions.py)  
+# dataclima87-13*
+Neste repositório estão presentes os Dados Meteorológicos referentes aos dados de 1987-2022 (*Sendo considerado preenchidos até 2013, com exceção para vitoria que vai até 2019). Também estão presente os arquivos para analise dos dados (main.ypnb e functions.py), dentre as funções esta a que carrega a planilha para o dataframe, realização de consultos por intervalo, mes, ano e analises estatisticas de média e somatório.   
