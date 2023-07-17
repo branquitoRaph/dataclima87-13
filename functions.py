@@ -11,6 +11,18 @@ def leTab(dados):
     data = data.replace(',', '.', regex=True)
     return data
 
+#Função para converter insolação que está em décimo por hora
+def converteInsolacao(df, coluna):
+    #Converter décimo de hora para hora
+    fator_conversao = 0.1
+    #Converter a coluna para horas
+    df[coluna] = df[coluna] * fator_conversao
+    #Converter para kJ/m²
+    constante_solar = 0.041868
+    df[coluna] = df[coluna] * constante_solar
+
+    return df
+
 # Função que retorna intervalos do dataframe 
 def dataTab(df, dataInicial, dataFinal):
     posicao_inicial = df[df['Data'] == dataInicial].index[0]
